@@ -1,8 +1,11 @@
 package ua.j.entity;
 
+import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import lombok.Getter;
@@ -17,7 +20,11 @@ public class Hall extends BaseEntity {
 
 	private String name;
 	
-	private int sits;
+	@Column(name = "number_of_sits")
+	private int numberOfSits;
+//	
+//	@OneToMany(mappedBy = "hall")
+//	private List<Sits> sits = new ArrayList<Sits>();
 	
 	
 }

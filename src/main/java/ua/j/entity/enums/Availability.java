@@ -5,10 +5,11 @@ import lombok.Getter;
 
 @AllArgsConstructor
 @Getter
-public enum SitStatus {
+public enum Availability {
 
-	FREE("FREE"), SOLD("SOLD");
 	
-	private String status;
-	
+		ABLE("ABLE"), DISABLE("DISABLE");
+		
+		private String Availability;
+
 }

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.OneToMany;
@@ -22,11 +23,15 @@ public class Movie extends BaseEntity {
 
 	private String name;
 	
+	@Column(length = 500)
 	private String description;
 	
 	private int length;
 	
 	@OneToMany(mappedBy = "movie")
-	private List<Sesion> sesion = new ArrayList<Sesion>();
+	private List<Session> session = new ArrayList<Session>();
+	
+	@Column(name = "image_url")
+	private String imageURL;
 	
 }

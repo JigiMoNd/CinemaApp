@@ -22,8 +22,8 @@ import ua.j.entity.enums.SitStatus;
 public class Ticket extends BaseEntity {
 	
 	@ManyToOne
-	@JoinColumn(name = "sesion_id")
-	private Sesion sesion;
+	@JoinColumn(name = "session_id")
+	private Session session;
 
 	@ManyToOne
 	@JoinColumn(name = "hall_id")
