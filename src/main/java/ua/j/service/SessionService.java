@@ -6,11 +6,11 @@ import ua.j.entity.Session;
 
 public interface SessionService {
 	
-	void saveSesion(Session session);
+	void saveSession(Session session);
 	
-	List<Session> findAllSesions();
+	List<Session> findAllSessions();
 	
-	Session findSesionById(int id);
+	Session findSessionById(int id);
 	
-	void deleteSesionById (int id);
+	void deleteSessionById (int id);
 }

@@ -17,7 +17,8 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter @Setter
 public class Hall extends BaseEntity {
-
+	
+	@Column(name = "name", unique = true)
 	private String name;
 	
 	@Column(name = "number_of_sits")

@@ -16,22 +16,22 @@ public class SessionServiceImpl implements SessionService {
 	private SessionRepository sessionRepository;
 	
 	@Override
-	public void saveSesion(Session session) {
+	public void saveSession(Session session) {
 		sessionRepository.save(session);
 	}
 
 	@Override
-	public List<Session> findAllSesions() {
+	public List<Session> findAllSessions() {
 		return sessionRepository.findAll();
 	}
 
 	@Override
-	public Session findSesionById(int id) {
+	public Session findSessionById(int id) {
 		return sessionRepository.getOne(id);
 	}
 
 	@Override
-	public void deleteSesionById(int id) {
+	public void deleteSessionById(int id) {
 		sessionRepository.deleteById(id);
 	}
 

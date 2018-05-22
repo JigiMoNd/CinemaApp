@@ -4,7 +4,7 @@
 <a Href="/register">Register</a> <br>
 <a href="/profile">Profile</a> <br>
 
-<a href="/movies">Movies</a> <br>
-<a href="/sessions">Sessions</a> <br>
-<a href="/halls">Log in</a> <br>
+<a href="/movie/add-movie">Add Movies</a> <br>
+<a href="/session/add-session">Add Sessions</a> <br>
+<a href="/hall/add-hall">Add Hall</a> <br>
 <
